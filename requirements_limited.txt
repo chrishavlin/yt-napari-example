@@ -1,0 +1,6 @@
+yt>=4.4.0
+pooch
+h5py
+pandas 
+yt-napari
+jupyterlab
