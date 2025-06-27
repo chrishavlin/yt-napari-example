@@ -25,7 +25,7 @@ if __name__ == "__main__":
     )
     
     parser.add_argument("-outfile", default="output.zarr", help="the output zarr")
-    parser.add_argument("-sample", default="DeeplyNestedZoom", help="name of the yt sample dataset to load (needs to be a grid-based sample), default is DeeplyNestedZoom")
+    parser.add_argument("-sample", default="Enzo_64", help="name of the yt sample dataset to load (needs to be a grid-based sample), default is Enzo_64")
     parser.add_argument("-n_xyz", default="512,512,512", help="comma-separate list of dimensions for the output, default is 512,512,512")
     parser.add_argument("-chunksize", default=64, type=int, help="The chunksize to use (no partial chunks allowed!), default is 64")
     parser.add_argument("-field", default="gas,density", help="comma separated fieldtype, field name to sample")
