@@ -6,3 +6,5 @@ yt-napari
 napari
 pyQT5
 jupyterlab
+zarr
+yt_experiments
