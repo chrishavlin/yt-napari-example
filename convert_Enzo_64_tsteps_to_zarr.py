@@ -42,6 +42,9 @@ def load_convert_single_timestep(enzo_64_dir: os.PathLike,
     except FileNotFoundError:
         print("{file} not found, skipping")
         return
+
+
+    print(f"timestep {istep_str} ideal resampling size is: {ds.domain_width / ds.index.get_smallest_dx()}")
     
     # create a tiled arbitrary grid (does not sample yet)
     tag = YTTiledArbitraryGrid(
